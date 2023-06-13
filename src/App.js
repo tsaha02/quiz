@@ -127,7 +127,7 @@ function App() {
         .database()
         .ref(`results/${userId}`)
         .orderByKey()
-        .limitToLast(10) // Fetch the last 10 results
+        .limitToLast(10) 
         .once("value");
       const results = snapshot.val() || {};
       return Object.values(results);
