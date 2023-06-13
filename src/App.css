@@ -1,0 +1,106 @@
+body {
+  background-color: #343a40;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quiz-heading {
+  text-align: center;
+  margin: 2rem 0;
+  color: #f8f9fa;
+}
+
+.score-section {
+  background-color: #212529;
+  border: none;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.score-section .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f8f9fa;
+}
+
+.score-section .card-text {
+  margin-bottom: 1.5rem;
+  color: #f8f9fa;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.answer-section .btn {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 0.75rem;
+}
+
+.answer-section .btn:hover {
+  background-color: #6c757d;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  margin-top: 3rem;
+}
+.question-card {
+  background-color: #4b92d9;
+}
+.profile-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #60a8f1;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-navbar button {
+  margin-right: 10px;
+  width: 100px;
+}
+
+.app {
+  padding-top: 70px;
+}
+.quiz-result-history {
+  margin-top: 20px;
+  background-color: #212529;
+  color: white;
+}
+
+.quiz-result-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-result-history li {
+  margin-bottom: 10px;
+  color: rgb(249, 144, 144);
+}
