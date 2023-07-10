@@ -35,7 +35,7 @@ function App() {
   const fetchQuestions = async () => {
     try {
       const response = await fetch(
-        "https://opentdb.com/api.php?amount=25&category=18&difficulty=hard&type=multiple"
+        "https://opentdb.com/api.php?amount=10&category=18&difficulty=hard&type=multiple"
       );
       const data = await response.json();
       setQuestions(data.results);
@@ -127,7 +127,7 @@ function App() {
         .database()
         .ref(`results/${userId}`)
         .orderByKey()
-        .limitToLast(10) 
+        .limitToLast(10)
         .once("value");
       const results = snapshot.val() || {};
       return Object.values(results);
@@ -155,6 +155,9 @@ function App() {
           <div className="profile-navbar">
             <Button variant="success" onClick={() => setShowProfile(true)}>
               Profile
+            </Button>
+            <Button variant="danger" onClick={handleLogout} className="ml-2">
+              Logout
             </Button>
           </div>
         )}
